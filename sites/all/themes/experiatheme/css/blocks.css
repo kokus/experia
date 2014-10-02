@@ -53,6 +53,26 @@ h2.block-title { /* Block title */
 #block-menu-menu-NAME { /* Custom menu block */
 }
 
+#block-menu-menu-sidebar-menu ul {
+padding-right: 30px;	
+}
+
+#block-menu-menu-sidebar-menu ul li {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFFFFF;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #C1C1C1; */
+
+}
+#block-menu-menu-sidebar-menu ul li.first{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #C1C1C1;
+}
+
+
 #block-node-recent { /* "Recent content" block */
 }
 
