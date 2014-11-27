@@ -208,14 +208,16 @@ aside .sidebards {
     margin-bottom: -100000px;
     padding-bottom: 100000px;
 }
+
+/*
 #block-menu-menu-sidebar-menu ul li {
     border: medium none;
 }
-#block-menu-menu-sidebar-menu ul li.first {
-    border-bottom: 0 solid #C1C1C1;
-    border-top: 0 none;
+#block-menu-menu-sidebar-menu ul.menu li.first {
+    border-top:  1 solid #C1C1C1;
 }
 #block-menu-menu-sidebar-menu ul.menu {
+    border-top: none;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -224,12 +226,16 @@ aside .sidebards {
     padding-left: 0px;
     padding-right: 0px;	
 }
+
+*/
+
 .menu {
     margin-top: 0;
 }
 ul.menu ul.menu {
     padding-left: 0;
 }
+
 ul li.leaf, ul li.collapsed, ul li.expanded {
     color: #22516B;
     list-style-image: none;
@@ -237,10 +243,10 @@ ul li.leaf, ul li.collapsed, ul li.expanded {
     text-decoration: none;
 }
 
-/* Line buttom border left menus*/
+
 ul li.leaf a, ul li.collapsed a, ul li.expanded a {
-   /* background-image: url("../images/bg_button01.gif");
-    background-repeat: no-repeat; */
+    background-image: url("../images/bg_button01.gif");
+    background-repeat: no-repeat; 
     color: #22516B;
     display: block;
     font: bold 11px Arial,sans-serif;
@@ -275,6 +281,12 @@ ul li.expanded li a.active {
     background-image: url("../images/bg_button06.gif");
     background-repeat: no-repeat;
 }
+
+
+
+
+
+
 .region-header-page p {
     margin-bottom: 0;
     margin-top: 0;

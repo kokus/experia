@@ -85,8 +85,8 @@ function headerimage_settings_form() {
 
   $form['headerimage_node_type'] = array(
    '#type' => 'checkboxes',
-   '#title' => t('Node type'),
-   '#description' => t('The node type(s) that can be used with Header Image module.'),
+   '#title' => t('Content type'),
+   '#description' => t('The Content type(s) that can be used with Header Image module.'),
    '#default_value' => variable_get('headerimage_node_type', array()),
    '#options' => $nodetype,
    '#multiple' => true,
@@ -115,6 +115,22 @@ function headerimage_settings_form() {
       '#title' => t('Use Display Suite module'),
       '#description' => t('Display the Header Image with Display Suite settings'),
       '#default_value' => variable_get('headerimage_module_ds', true),
+    );
+  }
+
+  if (module_exists('locale')) {
+    $form['headerimage_language_support'] = array(
+      '#type' => 'checkbox',
+      '#title' => t('Show only nodes in current language'),
+      '#description' => t('Display only header images in the current language.'),
+      '#default_value' => variable_get('headerimage_language_support', FALSE),
+    );
+
+    $form['headerimage_language_support_neutral'] = array(
+      '#type' => 'checkbox',
+      '#title' => t('Respect language neutral'),
+      '#description' => t('Display only header images in the current language and respect language neutral. Both checkboxes need to be active to support this.'),
+      '#default_value' => variable_get('headerimage_language_support_neutral', FALSE),
     );
   }
 
