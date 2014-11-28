@@ -209,6 +209,9 @@ aside .sidebards {
     padding-bottom: 100000px;
 }
 
+
+
+
 /*
 #block-menu-menu-sidebar-menu ul li {
     border: medium none;
@@ -229,12 +232,21 @@ aside .sidebards {
 
 */
 
+/*
+#block-menu-menu-sidebar-menu ul.menu li.first {
+    border-top: 1px solid #ced1c6;
+}
+*/
+
 .menu {
     margin-top: 0;
+   
 }
 ul.menu ul.menu {
     padding-left: 0;
 }
+
+
 
 ul li.leaf, ul li.collapsed, ul li.expanded {
     color: #22516B;
@@ -243,10 +255,9 @@ ul li.leaf, ul li.collapsed, ul li.expanded {
     text-decoration: none;
 }
 
-
 ul li.leaf a, ul li.collapsed a, ul li.expanded a {
-    background-image: url("../images/bg_button01.gif");
-    background-repeat: no-repeat; 
+   /* background-image: url("../images/bg_button01.gif");
+    background-repeat: no-repeat; */
     color: #22516B;
     display: block;
     font: bold 11px Arial,sans-serif;
